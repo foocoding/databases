@@ -26,11 +26,6 @@ This setup assumes that you have Node.js 0.6 or higher.
 We use **mysqljs** driver which can be installed using <br>
 `npm install mysql`
 
-### Verification of the correct setup
-Run `node connection-test.js` from VScode(Windows) or the terminal(Linux or MAC).
-The output should be `The solution is:  2`. <br>
-connection-test.js can be found in the Week1 folder.
-
 In this class, students will be introduced to
 
 * Basics of relational databases: Concepts of tables, rows, columns, primary key, foreign key.
