@@ -19,9 +19,9 @@
 -- Current Database: `new_world`
 --
 
-CREATE DATABASE /*!32312 IF NOT EXISTS*/ `new_world_3` /*!40100 DEFAULT CHARACTER SET utf8mb4 */ /*!80016 DEFAULT ENCRYPTION='N' */;
+CREATE DATABASE /*!32312 IF NOT EXISTS*/ `new_world` /*!40100 DEFAULT CHARACTER SET utf8mb4 */ /*!80016 DEFAULT ENCRYPTION='N' */;
 
-USE `new_world_3`;
+USE `new_world`;
 
 --
 -- Table structure for table `city`
