@@ -19,9 +19,9 @@
 -- Current Database: `new_world`
 --
 
-CREATE DATABASE /*!32312 IF NOT EXISTS*/ `new_world` /*!40100 DEFAULT CHARACTER SET utf8mb4 */ /*!80016 DEFAULT ENCRYPTION='N' */;
+CREATE DATABASE /*!32312 IF NOT EXISTS*/ `new_world_3` /*!40100 DEFAULT CHARACTER SET utf8mb4 */ /*!80016 DEFAULT ENCRYPTION='N' */;
 
-USE `new_world`;
+USE `new_world_3`;
 
 --
 -- Table structure for table `city`
@@ -39,7 +39,7 @@ CREATE TABLE `city` (
   PRIMARY KEY (`ID`),
   KEY `CountryCode` (`CountryCode`),
   CONSTRAINT `city_ibfk_1` FOREIGN KEY (`CountryCode`) REFERENCES `country` (`Code`)
-) ENGINE=InnoDB AUTO_INCREMENT=4080 DEFAULT CHARSET=utf8mb4 
+) ENGINE=InnoDB AUTO_INCREMENT=4080 DEFAULT CHARSET=utf8mb4; 
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -4154,7 +4154,7 @@ CREATE TABLE `country` (
   `Capital` int DEFAULT NULL,
   `Code2` char(2) NOT NULL DEFAULT '',
   PRIMARY KEY (`Code`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4; 
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -4420,7 +4420,7 @@ CREATE TABLE `countrylanguage` (
   PRIMARY KEY (`CountryCode`,`Language`),
   KEY `CountryCode` (`CountryCode`),
   CONSTRAINT `countryLanguage_ibfk_1` FOREIGN KEY (`CountryCode`) REFERENCES `country` (`Code`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4; 
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
