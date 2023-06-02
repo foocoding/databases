@@ -5,11 +5,9 @@ The homework contains 3 parts
 Write a node-JS program to get answers of following queries
 on the **new_world** database: Note that you are expected to get the input from user
 and use **prepared** statements to write the queries.
-(This can also be submitted as text-file, just remember to use **prepared** statements)
 
 Hint: use [this] (https://github.com/sidorares/node-mysql2) link to read more
-about prepared statements.  
-Question 5 is a bonus question.
+about prepared statements. Don't use connection.query, since this will not have the desired effect  
 
 1. What is the capital of country X ? (Accept X from user)
 2. List all the languages spoken in the region Y (Accept Y from user)
@@ -35,11 +33,11 @@ Read about Entity-relationship diagrams on the Internet
 E.g. [here] (https://www.lucidchart.com/pages/er-diagrams)
 
 ## Part 3 : SQL research
-I want to get alerts when a country has >= 10 languages.
+I want to get notified when a country has >= 10 languages.
 E.g. If a country X has 9 languages in the CountryLanguage table,
-and a user INSERTs one more row in the CountryLanguage table, then I should get an alert.  
+and a user INSERTs one more row in the CountryLanguage table, then the user should get a message.  
 *How can I achieve this ?*
 - Write the necessary SQL statements for this solution and
 - Test your solution with example insert statements.  
 
-This is a bonus question, and can be solved in multiple ways.  
+This can be solved in multiple ways.  
