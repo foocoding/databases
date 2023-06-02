@@ -14,8 +14,7 @@ Question 5 is a bonus question.
 1. What is the capital of country X ? (Accept X from user)
 2. List all the languages spoken in the region Y (Accept Y from user)
 3. Find the number of cities in which language Z is spoken (Accept Z from user)
-4. List all the continents with the number of languages spoken in each continent  
-5. For the country given as input, is there any countries that
+4. For the country given as input, is there any countries that
     * have the same official language
     * is in the same continent
    
