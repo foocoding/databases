@@ -19,7 +19,7 @@
 -- Current Database: `new_world`
 --
 
-CREATE DATABASE /*!32312 IF NOT EXISTS*/ `new_world` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
+CREATE DATABASE /*!32312 IF NOT EXISTS*/ `new_world` /*!40100 DEFAULT CHARACTER SET utf8mb4 */ /*!80016 DEFAULT ENCRYPTION='N' */;
 
 USE `new_world`;
 
@@ -32,14 +32,14 @@ DROP TABLE IF EXISTS `city`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `city` (
   `ID` int NOT NULL AUTO_INCREMENT,
-  `Name` char(35) COLLATE utf8mb4_sv_0900_as_cs NOT NULL DEFAULT '',
-  `CountryCode` char(3) COLLATE utf8mb4_sv_0900_as_cs NOT NULL DEFAULT '',
-  `District` char(20) COLLATE utf8mb4_sv_0900_as_cs NOT NULL DEFAULT '',
+  `Name` char(35) NOT NULL DEFAULT '',
+  `CountryCode` char(3) NOT NULL DEFAULT '',
+  `District` char(20) NOT NULL DEFAULT '',
   `Population` int NOT NULL DEFAULT '0',
   PRIMARY KEY (`ID`),
   KEY `CountryCode` (`CountryCode`),
   CONSTRAINT `city_ibfk_1` FOREIGN KEY (`CountryCode`) REFERENCES `country` (`Code`)
-) ENGINE=InnoDB AUTO_INCREMENT=4080 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_sv_0900_as_cs;
+) ENGINE=InnoDB AUTO_INCREMENT=4080 DEFAULT CHARSET=utf8mb4; 
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -4138,23 +4138,23 @@ DROP TABLE IF EXISTS `country`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `country` (
-  `Code` char(3) COLLATE utf8mb4_sv_0900_as_cs NOT NULL DEFAULT '',
-  `Name` char(52) COLLATE utf8mb4_sv_0900_as_cs NOT NULL DEFAULT '',
-  `Continent` enum('Asia','Europe','North America','Africa','Oceania','Antarctica','South America') COLLATE utf8mb4_sv_0900_as_cs NOT NULL DEFAULT 'Asia',
-  `Region` char(26) COLLATE utf8mb4_sv_0900_as_cs NOT NULL DEFAULT '',
+  `Code` char(3) NOT NULL DEFAULT '',
+  `Name` char(52) NOT NULL DEFAULT '',
+  `Continent` enum('Asia','Europe','North America','Africa','Oceania','Antarctica','South America') NOT NULL DEFAULT 'Asia',
+  `Region` char(26) NOT NULL DEFAULT '',
   `SurfaceArea` float(10,2) NOT NULL DEFAULT '0.00',
   `IndepYear` smallint DEFAULT NULL,
   `Population` int NOT NULL DEFAULT '0',
   `LifeExpectancy` float(3,1) DEFAULT NULL,
   `GNP` float(10,2) DEFAULT NULL,
   `GNPOld` float(10,2) DEFAULT NULL,
-  `LocalName` char(45) COLLATE utf8mb4_sv_0900_as_cs NOT NULL DEFAULT '',
-  `GovernmentForm` char(45) COLLATE utf8mb4_sv_0900_as_cs NOT NULL DEFAULT '',
-  `HeadOfState` char(60) COLLATE utf8mb4_sv_0900_as_cs DEFAULT NULL,
+  `LocalName` char(45) NOT NULL DEFAULT '',
+  `GovernmentForm` char(45) NOT NULL DEFAULT '',
+  `HeadOfState` char(60) DEFAULT NULL,
   `Capital` int DEFAULT NULL,
-  `Code2` char(2) COLLATE utf8mb4_sv_0900_as_cs NOT NULL DEFAULT '',
+  `Code2` char(2) NOT NULL DEFAULT '',
   PRIMARY KEY (`Code`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_sv_0900_as_cs;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4; 
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -4413,14 +4413,14 @@ DROP TABLE IF EXISTS `countrylanguage`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `countrylanguage` (
-  `CountryCode` char(3) COLLATE utf8mb4_sv_0900_as_cs NOT NULL DEFAULT '',
-  `Language` char(30) COLLATE utf8mb4_sv_0900_as_cs NOT NULL DEFAULT '',
-  `IsOfficial` enum('T','F') COLLATE utf8mb4_sv_0900_as_cs NOT NULL DEFAULT 'F',
+  `CountryCode` char(3) NOT NULL DEFAULT '',
+  `Language` char(30) NOT NULL DEFAULT '',
+  `IsOfficial` enum('T','F') NOT NULL DEFAULT 'F',
   `Percentage` float(4,1) NOT NULL DEFAULT '0.0',
   PRIMARY KEY (`CountryCode`,`Language`),
   KEY `CountryCode` (`CountryCode`),
   CONSTRAINT `countryLanguage_ibfk_1` FOREIGN KEY (`CountryCode`) REFERENCES `country` (`Code`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_sv_0900_as_cs;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4; 
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
