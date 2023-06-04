@@ -7,7 +7,7 @@ on the **new_world** database: Note that you are expected to get the input from 
 and use **prepared** statements to write the queries.
 
 Hint: use [this] (https://github.com/sidorares/node-mysql2) link to read more
-about prepared statements. Don't use connection.query, since this will not have the desired effect  
+about prepared statements. Don't use connection.query(), since this will not have the desired effect  
 
 1. What is the capital of country X ? (Accept X from user)
 2. List all the languages spoken in the region Y (Accept Y from user)
