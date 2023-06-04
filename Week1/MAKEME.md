@@ -18,10 +18,9 @@ then query (using select statements) the **new_world** database to answer follow
 4. What's the name of all the countries on the continent ‘Europe’ ?
 5. List all the countries in the descending order of their surface areas.
 6. What are the names of all the cities in the Netherlands?
-7. What is the population of Rotterdam ?
-8. What's the top 10 countries by Surface Area ?
-9. What's the top 10 most populated cities?
-10. What is the population of the world ?
+7. List the names of the countries that has more than 10 cities, and a total population of the cities listed (not the country population) of more than 50 million
+8. List the cities from the countries found in #7, where the city population is > 5M
+9. List the largest country (by size) on each continent, except Antarctica
 
 
 ### Importing a MySQL-dump into an instance:
