@@ -8,7 +8,7 @@
 DROP SCHEMA
 
 IF EXISTS hr;
-	CREATE SCHEMA hr COLLATE = utf8_general_ci;
+	CREATE SCHEMA hr COLLATE = utf8mb4_sv_0900_as_cs;
 
 USE hr;
 
