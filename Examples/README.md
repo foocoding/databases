@@ -17,10 +17,13 @@ This will demostrate how and why you might use views, both for conveniance and s
 ### [Triggers](https://github.com/foocoding/databases/blob/master/Examples/trigger_example.md) 
 - Example on how to create and use them
 
+### [Procedures](https://github.com/foocoding/databases/blob/master/Examples/procedure_example.md) 
+- Example on how to create and use them
+
 This will demostrate how and why you need to use the correct join-method to get the result you expect/need
 
 ### Example databases
 - emp-schema
-- hr-schema-mysql <br>
+- hr_schema <br>
   Credit goes to [Andrei Ciobanu](https://github.com/nomemory/hr-schema-mysql) for creating a HR example schema
 
